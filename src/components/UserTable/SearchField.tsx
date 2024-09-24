@@ -15,7 +15,8 @@ import {
   MenuItem,
   FormControl,
 } from "@mui/material";
-import FilterListIcon from "@mui/icons-material/FilterList";
+
+import { MdFilterList } from "react-icons/md";
 
 const SearchField: React.FC<any> = ({ setFilter, columns, setColumns }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -78,7 +79,7 @@ const SearchField: React.FC<any> = ({ setFilter, columns, setColumns }) => {
     <div>
       <IconButton onClick={handleClick}>
         <Badge badgeContent={filterCount} color="primary">
-          <FilterListIcon />
+          <MdFilterList />
         </Badge>
       </IconButton>
 
